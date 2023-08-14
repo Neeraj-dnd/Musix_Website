@@ -4,7 +4,7 @@ var index = 1;
 
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio(`/songs/song_${index}.mp3`);
+let audioElement = new Audio(`https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_${index}.mp3`);
 let myProgressBar = document.getElementById('myProgressBar');
 let masterPlay = document.getElementById('masterPlay');
 let previous = document.getElementById('previous');
@@ -16,16 +16,16 @@ let playingSong = document.getElementById('playingSong');
 
 
 let songslist = [
-    {songName: "Retour (feat.Lara Somogyi)", filePath: "/songs/song_1.mp3", coverPath: "/song_covers/cover_1.jpg", duration: "07:05"},
-    {songName: "Seeds", filePath: "/songs/song_2.mp3", coverPath: "/song_covers/cover_2.jpg", duration: "04:14"},
-    {songName: "Spiriteaux", filePath: "/songs/song_3.mp3", coverPath: "/song_covers/cover_3.jpg", duration: "03:54"},
-    {songName: "Tenderness (feat. Chris Coleman)", filePath: "/songs/song_4.mp3", coverPath: "/song_covers/cover_4.jpg", duration: "05:20", },
-    {songName: "Jonti (2016 Remastered Version)", filePath: "/songs/song_5.mp3", coverPath: "/song_covers/cover_5.jpg", duration: "03:03"},
-    {songName: "Colorado Nights", filePath: "/songs/song_6.mp3", coverPath: "/song_covers/cover_6.jpg", duration: "05:21"},
-    {songName: "Noch", filePath: "/songs/song_7.mp3", coverPath: "/song_covers/cover_7.jpg", duration: "03:22"},
-    {songName: "Journey", filePath: "/songs/song_8.mp3", coverPath: "/song_covers/cover_8.jpg", duration: "03:56"},
-    {songName: "Butterflies (Piano Sonata)", filePath: "/songs/song_9.mp3", coverPath: "/song_covers/cover_9.jpg", duration: "04:00"},
-    {songName: "Nuit", filePath: "/songs/song_10.mp3", coverPath: "/song_covers/cover_10.jpg", duration: "03:25"},
+    {songName: "Retour (feat.Lara Somogyi)", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_1.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_1.jpg", duration: "07:05"},
+    {songName: "Seeds", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_2.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_2.jpg", duration: "04:14"},
+    {songName: "Spiriteaux", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_3.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_3.jpg", duration: "03:54"},
+    {songName: "Tenderness (feat. Chris Coleman)", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_4.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_4.jpg", duration: "05:20", },
+    {songName: "Jonti (2016 Remastered Version)", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_5.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_5.jpg", duration: "03:03"},
+    {songName: "Colorado Nights", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_6.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_6.jpg", duration: "05:21"},
+    {songName: "Noch", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_7.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_7.jpg", duration: "03:22"},
+    {songName: "Journey", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_8.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_8.jpg", duration: "03:56"},
+    {songName: "Butterflies (Piano Sonata)", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_9.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_9.jpg", duration: "04:00"},
+    {songName: "Nuit", filePath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/songs/song_10.mp3", coverPath: "https://github.com/Neeraj-dnd/Musix_Website/blob/master/song_covers/cover_10.jpg", duration: "03:25"},
 ]
 
 
