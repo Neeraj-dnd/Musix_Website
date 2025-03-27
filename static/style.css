@@ -12,7 +12,7 @@ nav {
     height: 44px;
     background-color: #01232c;
     margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+    padding: 0;
     position: fixed;
     top: 0;
     width: 100%
@@ -22,8 +22,8 @@ nav ul {
     display: flex;
     align-items: center;
     list-style-type: none;
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
