@@ -4,7 +4,8 @@ var index = 1;
 
 // Initialize the Variables
 let songIndex = 0;
-let audioElement = new Audio(`/songs/song_${index}.mp3`);
+let audioElement = new Audio(`static/songs/song_${index}.mp3`);
+//let audioElement = new Audio("{{ url_for('static', filename='songs/song_' + index + '.mp3') }}");
 let myProgressBar = document.getElementById('myProgressBar');
 let masterPlay = document.getElementById('masterPlay');
 let previous = document.getElementById('previous');
@@ -16,16 +17,16 @@ let playingSong = document.getElementById('playingSong');
 
 
 let songslist = [
-    {songName: "Retour (feat.Lara Somogyi)", filePath: "/songs/song_1.mp3", coverPath: "/song_covers/cover_1.jpg", duration: "07:05"},
-    {songName: "Seeds", filePath: "/songs/song_2.mp3", coverPath: "/song_covers/cover_2.jpg", duration: "04:14"},
-    {songName: "Spiriteaux", filePath: "/songs/song_3.mp3", coverPath: "/song_covers/cover_3.jpg", duration: "03:54"},
-    {songName: "Tenderness (feat. Chris Coleman)", filePath: "/songs/song_4.mp3", coverPath: "/song_covers/cover_4.jpg", duration: "05:20", },
-    {songName: "Jonti (2016 Remastered Version)", filePath: "/songs/song_5.mp3", coverPath: "/song_covers/cover_5.jpg", duration: "03:03"},
-    {songName: "Colorado Nights", filePath: "/songs/song_6.mp3", coverPath: "/song_covers/cover_6.jpg", duration: "05:21"},
-    {songName: "Noch", filePath: "/songs/song_7.mp3", coverPath: "/song_covers/cover_7.jpg", duration: "03:22"},
-    {songName: "Journey", filePath: "/songs/song_8.mp3", coverPath: "/song_covers/cover_8.jpg", duration: "03:56"},
-    {songName: "Butterflies (Piano Sonata)", filePath: "/songs/song_9.mp3", coverPath: "/song_covers/cover_9.jpg", duration: "04:00"},
-    {songName: "Nuit", filePath: "/songs/song_10.mp3", coverPath: "/song_covers/cover_10.jpg", duration: "03:25"},
+    {songName: "Retour (feat.Lara Somogyi)", filePath: "static/songs/song_1.mp3", coverPath: "static/song_covers/cover_1.jpg", duration: "07:05"},
+    {songName: "Seeds", filePath: "static/songs/song_2.mp3", coverPath: "static/song_covers/cover_2.jpg", duration: "04:14"},
+    {songName: "Spiriteaux", filePath: "static/songs/song_3.mp3", coverPath: "static/song_covers/cover_3.jpg", duration: "03:54"},
+    {songName: "Tenderness (feat. Chris Coleman)", filePath: "static/songs/song_4.mp3", coverPath: "static/song_covers/cover_4.jpg", duration: "05:20", },
+    {songName: "Jonti (2016 Remastered Version)", filePath: "static/songs/song_5.mp3", coverPath: "static/song_covers/cover_5.jpg", duration: "03:03"},
+    {songName: "Colorado Nights", filePath: "static/songs/song_6.mp3", coverPath: "static/song_covers/cover_6.jpg", duration: "05:21"},
+    {songName: "Noch", filePath: "static/songs/song_7.mp3", coverPath: "static/song_covers/cover_7.jpg", duration: "03:22"},
+    {songName: "Journey", filePath: "static/songs/song_8.mp3", coverPath: "static/song_covers/cover_8.jpg", duration: "03:56"},
+    {songName: "Butterflies (Piano Sonata)", filePath: "static/songs/song_9.mp3", coverPath: "static/song_covers/cover_9.jpg", duration: "04:00"},
+    {songName: "Nuit", filePath: "static/songs/song_10.mp3", coverPath: "static/song_covers/cover_10.jpg", duration: "03:25"},
 ]
 
 
@@ -50,7 +51,7 @@ songElements.forEach(function(songElement) {
             makeAllPlays();
             play.innerHTML = '<path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/>';
             console.log(`index: ${index}`);
-            audioElement.src = `/songs/song_${index}.mp3`;
+            audioElement.src = `static/songs/song_${index}.mp3`;
 
             audioElement.play();
             masterPlay.innerHTML = '<path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM224 192V320c0 17.7-14.3 32-32 32s-32-14.3-32-32V192c0-17.7 14.3-32 32-32s32 14.3 32 32zm128 0V320c0 17.7-14.3 32-32 32s-32-14.3-32-32V192c0-17.7 14.3-32 32-32s32 14.3 32 32z"/>';
@@ -118,7 +119,7 @@ previous.addEventListener('click', function() {
         index = 1;
     }
     makeAllPlays();
-    audioElement.src = `/songs/song_${index}.mp3`
+    audioElement.src = `static/songs/song_${index}.mp3`
     audioElement.play();
     let temp = document.getElementById(index);
     temp.innerHTML = '<path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/>';
@@ -136,7 +137,7 @@ next.addEventListener('click', function() {
         index = 10;
     }
     makeAllPlays();
-    audioElement.src = `/songs/song_${index}.mp3`
+    audioElement.src = `static/songs/song_${index}.mp3`
     audioElement.play();
     let temp = document.getElementById(index);
     temp.innerHTML = '<path d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"/>';

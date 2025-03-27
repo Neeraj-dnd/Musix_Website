@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Musix - World of music!</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <nav>
@@ -27,7 +27,7 @@
             <h1 class="album">Tony Anderson - Soundtracks</h1>
             <div class="allSongs">
                 <div class="songs">
-                    <img src="/song_covers/cover_1.jpg" alt="1">
+                    <img src="static/song_covers/cover_1.jpg" alt="1">
                     <span class="songTitle">Retour</span>
                     <span class="timestamp">35:17</span>
                     <svg id="1" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -35,7 +35,7 @@
                     </svg>
                 </div>
                 <div class="songs">
-                    <img src="/song_covers/cover_2.jpg" alt="1">
+                    <img src="static/song_covers/cover_2.jpg" alt="1">
                     <span class="songTitle">Vraja Vilas 1.1</span>
                     <span class="timestamp">35:17</span>
                     <svg id="2" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -43,7 +43,7 @@
                     </svg>
                 </div>
                 <div class="songs">
-                    <img src="/song_covers/cover_3.jpg" alt="1">
+                    <img src="static/song_covers/cover_3.jpg" alt="1">
                     <span class="songTitle">Vraja Vilas 1.1</span>
                     <span class="timestamp">35:17</span>
                     <svg id="3" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -51,7 +51,7 @@
                     </svg>
                 </div>
                 <div class="songs">
-                    <img src="/song_covers/cover_8.jpg" alt="1">
+                    <img src="static/song_covers/cover_8.jpg" alt="1">
                     <span class="songTitle">Vraja Vilas 1.1</span>
                     <span class="timestamp">35:17</span>
                     <svg id="4" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -59,7 +59,7 @@
                     </svg>
                 </div>
                 <div class="songs">
-                    <img src="/song_covers/cover_8.jpg" alt="1">
+                    <img src="static/song_covers/cover_8.jpg" alt="1">
                     <span class="songTitle">Vraja Vilas 1.1</span>
                     <span class="timestamp">35:17</span>
                     <svg id="5" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -68,7 +68,7 @@
                 </div>
 
                 <div class="songs">
-                    <img src="/song_covers/cover_8.jpg" alt="1">
+                    <img src="static/song_covers/cover_8.jpg" alt="1">
                     <span class="songTitle">Vraja Vilas 1.1</span>
                     <span class="timestamp">35:17</span>
                     <svg id="6" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -76,7 +76,7 @@
                     </svg>
                 </div>
                 <div class="songs">
-                    <img src="/song_covers/cover_7.jpg" alt="1">
+                    <img src="static/song_covers/cover_7.jpg" alt="1">
                     <span class="songTitle">Vraja Vilas 1.1</span>
                     <span class="timestamp">35:17</span>
                     <svg id="7" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -84,7 +84,7 @@
                     </svg>
                 </div>
                 <div class="songs">
-                    <img src="/song_covers/cover_8.jpg" alt="1">
+                    <img src="static/song_covers/cover_8.jpg" alt="1">
                     <span class="songTitle">Vraja Vilas 1.1</span>
                     <span class="timestamp">35:17</span>
                     <svg id="8" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -92,7 +92,7 @@
                     </svg>
                 </div>
                 <div class="songs">
-                    <img src="/song_covers/cover_8.jpg" alt="1">
+                    <img src="static/song_covers/cover_8.jpg" alt="1">
                     <span class="songTitle">Vraja Vilas 1.1</span>
                     <span class="timestamp">35:17</span>
                     <svg id="9" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -100,7 +100,7 @@
                     </svg>
                 </div>
                 <div class="songs">
-                    <img src="/song_covers/cover_8.jpg" alt="1">
+                    <img src="static/song_covers/cover_8.jpg" alt="1">
                     <span class="songTitle">Vraja Vilas 1.1</span>
                     <span class="timestamp">35:17</span>
                     <svg id="10" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 384 512">
@@ -131,6 +131,7 @@
         </div>
     </div>
 
-    <script src="/static/script.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
 </body>
 </html>

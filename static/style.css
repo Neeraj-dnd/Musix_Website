@@ -1,11 +1,19 @@
 
 /* Reset margin and padding for body and HTML */
 body, html {
-    background-color: #eeeee4;
+    background-color: #01232c;
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
 }
+
+/* Hide scrollbar for Webkit browsers */
+::-webkit-scrollbar {
+  display: none;
+}
+
 
 nav {
     font-family: 'Ubuntu';
@@ -29,6 +37,12 @@ nav ul {
 nav ul li {
     cursor: pointer;
     padding: 0 12px;
+    color: #afeeaa;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+    color: #ffffff;
 }
 
 .brand img {
@@ -44,8 +58,8 @@ nav ul li {
 }
 
 .container {
-    min-height: calc(100% - 230px);
-    background-color: #01232c;
+    min-height: calc(100% - 200px);
+    background-color: #1f1d24;
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -53,7 +67,7 @@ nav ul li {
     padding: 20px;
     background-size: cover;
     background-position: center;
-    width: 80%;
+    width: 95vw;
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -89,6 +103,7 @@ nav ul li {
     z-index: 1;
     max-height: calc(100% - 125px);
     width: 100%;
+    color: #ffffff;
 }
 
 .allSongs {
@@ -112,11 +127,13 @@ nav ul li {
 .songTitle {
     flex: 1; /* Allow the title to take up remaining space */
     margin-left: 8px; /* Add a small space between image and title */
+    color: #ffffff;
 }
 
 .timestamp {
     margin-right: 3%;
     justify-content: flex-end;
+    color: #ffffff;
 }
 
 .songs svg {
@@ -134,7 +151,7 @@ nav ul li {
     position: fixed;
     height: 100px;
     width: 100%;
-    background-color: #1f1d24;
+    background-color: #01232c;
     bottom: 0;
     display: flex;
     justify-content: center;
@@ -159,6 +176,7 @@ nav ul li {
     align-items: center;
     opacity: 0;
     transition: opacity 0.5s ease-in;
+    color: #ffffff;
 }
 
 #myProgressBar {
@@ -166,6 +184,7 @@ nav ul li {
     width: 70%;
     cursor: pointer;
     z-index: 1;
+    color: #ffffff;
 }
 
 
